@@ -85,7 +85,7 @@ void CGSSetDebugOptions(int);
 
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
-  CGTableCount sampleCount;
+  UInt32 sampleCount;
   CGGetDisplayTransferByTable( 0, 256, gOriginalRedTable, gOriginalGreenTable, gOriginalBlueTable, &sampleCount);
   
   originalBrightness = [self getDisplayBrightness];
